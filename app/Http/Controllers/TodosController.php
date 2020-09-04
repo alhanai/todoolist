@@ -35,6 +35,8 @@ class TodosController extends Controller {
 	public function store(Request $request) {
 		$this->validate($request, [
 			'text' => 'required',
+			'body' => 'required',
+			'due' => 'required',
 		]);
 
 		//Create Todo

@@ -8,8 +8,8 @@
 <hr>
 <p>{{$todo->bady}}</p>
 <a herf="/todo/{($todo->id)/edit" class="btn btn-primary">Edit</a>
-{!! From ::open(['action' =>['TodosController@destory',$todo ->id],'method'=>'POST', 'class' => 'pull-right']) !!}
-{{ Form ::hidden('_method','DELETE') }}
-{{ Form ::bsSubmit ('Delete',['class'=>'btn btn-danger']) }}
+{!! Form::open(['action' =>['TodosController@destroy',$todo ->id],'method'=>'POST', 'class' => 'pull-right']) !!}
+{{ Form::hidden('_method','DELETE') }}
+{{ Form::bsSubmit ('Delete',['class'=>'btn btn-danger']) }}
 {!! Form::close() !!}
 @endsection

@@ -5,7 +5,7 @@
  @foreach($todos as $todo)
    <div  class="alert alert-danger" role="alert">
 	   <h3>
-		   	<a href="todo/{{$todo->id}}">{{$todo->text}}</a>
+		   	<a href="{{route('todo.show',['id'=>$todo->id])}}">{{$todo->text}}</a>
 		   	<span class="alert alert-pink">{{$todo->due}}</span>
 	   </h3>
    </div>

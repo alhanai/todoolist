@@ -8,7 +8,8 @@
        <span class="icon-bar"></span>
   </button>
 <br>
-        <a  class="alert alert-info" role="alert" href="{{route('todo.create')}}">Todolist</a>
+        <a  class="alert alert-info" role="alert" href="{{route('todo.create')}}">create </a>
+        <a  class="alert alert-info" role="alert" href="{{route('todo.index')}}">index </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
